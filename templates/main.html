@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Dream Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        body { margin-bottom: 2em; }
+        .card { margin-bottom: 2em; }
+    </style>
+    
+    <style>
+        .body {
+            color: rgb(10, 219, 209);
+        }
+
+        .title {
+            color: purple;
+            font-family: fantasy;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            padding: 20px;
+            border-radius: 6px;
+            background-color: purple;
+            color: rgb(10, 105, 117);
+            margin: 20px;
+        }
+        
+        .text {
+            padding: 20px;
+            border-radius: 6px;
+            background-color: rgb(10, 219, 209);
+            color: rgb(255, 255, 255);
+            margin: 20px;
+        }
+        
+        .col {
+            flex: 1;
+            text-align: center;
+        }
+
+        html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-bar {
+    background-color: rgba(53, 124, 109, 0.842);
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 8vw;
+}
+
+p {
+    font-family: fantasy;
+    position: relative;
+    left: 12px;
+}
+
+h2 {
+    font-family: fantasy;
+    position: relative;
+    font-size: 17px;
+    left: 12px;
+}
+
+.member-card {
+    width: 250px;
+    height: 34vh;
+    margin-bottom: 5vh;
+    background-color: rgb(240, 238, 238);
+    box-shadow: 2px 5px 5px black;
+    border-top-left-radius: 10px;
+}
+
+.card-container {
+    position: absolute;
+    top: 26vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.card-top {
+    background-color: rgb(228, 174, 76);
+    border: 2px solid rgb(228, 174, 76);
+    width: 246px;
+    border-top-left-radius: 10px;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>My Team</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% employees %}
+        </div>
+    </div>
+</body>
+</html>
